@@ -1,0 +1,13 @@
+def two_sum(nums, target):
+    for i in range(len(nums)):
+        for j in range(i + 1, len(nums)):
+            if nums[i] + nums[j] == target:
+                return [i, j]
+
+    return []
+
+
+if __name__ == "__main__":
+    print("Resultat 1:", two_sum([2, 7, 11, 15], 9))
+    print("Resultat 2:", two_sum([3, 2, 4], 6))
+    print("Resultat 3:", two_sum([1, 2, 3], 100))
